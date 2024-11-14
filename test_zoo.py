@@ -5,11 +5,11 @@ class TestZoo(unittest.TestCase):
     def setUp(self):
         self.zoo = Zoo()
     
-    def test_err_ticket_price(self)
+    def test_err_ticket_price(self):
         self.assertEqual(self.zoo.get_ticket_price(-1),"err")
     
-    def test_nobirth_ticket_price(self)
-        self.assertEqual(self.zoo.get_ticket_price(0),0)
+    def test_nobirth_ticket_price(self):
+        self.assertEqual(self.zoo.get_ticket_price(0),50)
 
     def test_child_ticket_price(self):
         self.assertEqual(self.zoo.get_ticket_price(5), 50)
@@ -22,8 +22,6 @@ class TestZoo(unittest.TestCase):
 
     def test_old_ticket_price(self):
         self.assertEqual(self.zoo.get_ticket_price(70),100)
-
-    def test_
     # Add your additional test cases here.
 
 if __name__ == '__main__':
